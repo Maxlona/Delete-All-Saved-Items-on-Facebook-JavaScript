@@ -47,11 +47,9 @@ Do not navigate away from the page while the script is running.
 
 If the script pauses due to Facebook lazy-loading:
 
-Scroll the page down once to load more items.
-
 You can stop the script at any time by running:
 
-clearInterval(unsaveInterval);
+clearInterval(unsaveInterval); Or close the browser window
 
 ✅ Result
 
