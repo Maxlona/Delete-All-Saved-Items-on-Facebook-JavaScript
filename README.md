@@ -23,6 +23,9 @@ Paste the JavaScript automation script from the repository into the console.
 
 Press Enter to start the automated process.
 
+<img width="422" height="580" alt="image" src="https://github.com/user-attachments/assets/b37cfdaa-3691-45b5-8e07-7294e0997842" />
+
+
 ⚙️ What the Script Does
 
 Automatically opens the More options menu for each saved item.
