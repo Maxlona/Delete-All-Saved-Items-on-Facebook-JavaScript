@@ -23,10 +23,11 @@ Paste the JavaScript automation script from the repository into the console.
 
 Press Enter to start the automated process.
 
-<img width="422" height="580" alt="image" src="https://github.com/user-attachments/assets/b37cfdaa-3691-45b5-8e07-7294e0997842" />
+<img width="428" height="586" alt="image" src="https://github.com/user-attachments/assets/56fdcbf1-98cc-4f8f-a39e-91d505fa3358" />
 
 running mode...
-<img width="425" height="137" alt="image" src="https://github.com/user-attachments/assets/1a8560ba-a9cb-499d-b287-576a534734a4" />
+
+<img width="417" height="212" alt="image" src="https://github.com/user-attachments/assets/f714fc61-8462-4623-9c54-7c6f39a8886a" />
 
 ⚙️ What the Script Does
 
