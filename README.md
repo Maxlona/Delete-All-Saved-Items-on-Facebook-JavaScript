@@ -25,6 +25,7 @@ Press Enter to start the automated process.
 
 <img width="422" height="580" alt="image" src="https://github.com/user-attachments/assets/b37cfdaa-3691-45b5-8e07-7294e0997842" />
 
+running mode...
 <img width="425" height="137" alt="image" src="https://github.com/user-attachments/assets/1a8560ba-a9cb-499d-b287-576a534734a4" />
 
 ⚙️ What the Script Does
