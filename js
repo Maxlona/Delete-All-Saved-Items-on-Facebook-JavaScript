@@ -1,3 +1,9 @@
+// run auto-scroll first
+setInterval(() => {
+  window.scrollTo(0, document.body.scrollHeight);
+}, 2000);
+
+// run unsave items...
 const wait = ms => new Promise(r => setTimeout(r, ms));
 async function removeSaved() {
   while (true) {
