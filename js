@@ -1,22 +1,23 @@
-const unsaveInterval = setInterval(() => {
-  // 1. Open the "More options" menu
-  const menuBtn = [...document.querySelectorAll('[role="button"]')]
-    .find(b => b.getAttribute('aria-label')?.includes('More options'));
-  if (!menuBtn) {
-    console.log('✅ No more saved items found. Stopping...');
-    clearInterval(unsaveInterval);
-    return;
-  }
-  menuBtn.dispatchEvent(new MouseEvent('click', { bubbles: true }));
-  // 2. Wait for menu to render, then click "Unsave"
-  setTimeout(() => {
+const wait = ms => new Promise(r => setTimeout(r, ms));
+async function removeSaved() {
+  while (true) {
+    const menuBtn = document.querySelector('[aria-label="More options for saved item"]');
+    if (!menuBtn) {
+      console.log("No saved items left");
+      break;
+    }
+    menuBtn.click();
+    await wait(700);
     const unsaveBtn = [...document.querySelectorAll('[role="menuitem"]')]
-      .find(e => e.textContent.trim() === 'Unsave');
+      .find(e => e.innerText.trim().toLowerCase().includes("unsave"));
     if (unsaveBtn) {
       unsaveBtn.click();
-      console.log('🗑️ Item unsaved...');
+      console.log("Unsaved one item");
     } else {
-      console.log('⚠️ Unsave button not found yet...');
+      console.log("Unsave option missing");
+      break;
     }
-  }, 300); // small delay for FB menu render
-}, 1000); // 🔁 runs every 1 second
+    await wait(1200);
+  }
+}
+removeSaved();
